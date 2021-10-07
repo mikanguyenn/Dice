@@ -15,7 +15,13 @@ void draw() {
     }
   }
   fill(0);
-  text("The sum of rolls is " + sum,225,450);
+  text("The sum of rolls is " + sum,237.5,450);
+  if(sum % 2 == 0){
+    text("The sum of rolls is EVEN",237.5,465);
+  }
+  else{
+    text("The sum of rolls is ODD",237.5,465);
+  }
 }
 void mousePressed()
 {
@@ -79,4 +85,3 @@ class Die //models one single dice cube
     }
   }
 }
-
